@@ -1,0 +1,195 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: borderc-box;
+}
+body {
+font-family: sans-serif;
+background-color: #8a8be8;
+color: #000000;
+}
+header {
+    background-color: #8a8be8;
+    color: blue(0, 255, 255, 0.486);
+    padding: 20px;
+    text-align: center;
+}
+
+nav a{
+    color: blueviolet;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#projets img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #000;
+}
+footer {
+    background-color: #000000;
+    color: blueviolet;
+    text-align: center;
+    padding: 15px;
+}
+#competences {
+  background-color: #8a8be8;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#competences h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #002f6c;
+}
+
+.skill {
+  margin-bottom: 25px;
+max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.bar {
+  background-color: #8a8be8;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.fill {
+  height: 100%;
+  line-height: 25px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 25px;
+  animation: fillAnimation 2s ease-out forwards;
+}
+
+.fill.html { width: 90%; background-color: #e44d26; }
+.fill.css  { width: 85%; background-color: #264de4; }
+.fill.c    { width: 70%; background-color: #002f6c; }
+
+@keyframes fillAnimation {
+  from { width: 0; }
+  to { width: inherit; }
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+.photo-cercle {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #002f6c;
+  margin-bottom: 20px;
+}
+
+.skill {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+.bar {
+  background-color:#ddd;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 25px;
+}
+.fill {
+  height: 100%;
+  line-height: 25px;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 25px;
+  animation: fillAnim 2s ease-out forwards;
+}
+.fill.html { width: 90%; background: #e44d26; }
+.fill.css { width: 85%; background: #264de4; }
+.fill.c { width: 70%; background: #00599c; }
+
+@keyframes fillAnim {
+  from { width: 0; }
+  to { width: inherit; }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+margin: auto;
+}
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+form button {
+  background: #002f6c;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#projets {
+  background-color: #8a8be8;
+  padding: 50px 20px;
+}
+
+.projet-card {
+  background-color: #8a8be8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.projet-card:hover {
+  transform: scale(1.02);
+}
+
+.projet-card h1 {
+  color: #002f6c;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.projet-card h2 {
+  color: #555;
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.projet-card p {
+  line-height: 1.6;
+  color: #333;
+}
